@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white text-gray-800 font-sans">
+        <nav className="bg-blue-600 text-white p-4 shadow-md">
+          <ul className="flex gap-6 justify-center">
+            <li>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                  isActive ? 'underline font-semibold' : 'hover:underline'
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive ? 'underline font-semibold' : 'hover:underline'
+                }
+              >
+                Projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? 'underline font-semibold' : 'hover:underline'
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
-
-export default App;
