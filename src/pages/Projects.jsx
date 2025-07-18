@@ -2,10 +2,10 @@
 
 export default function Projects() {
     const projects = [
-  { title: 'Quranly', link: 'quranly-phi.vercel.app', description: 'Helps user track their memorization of the holy Quran' },
-  { title: 'Boom', link: 'boom-kohl.vercel.app', description: 'Lets users record, and upload movie clips and get the movie name.' },
-  { title: 'JibolaReel', link: 'jibola-reel.vercel.app', description: `Lets users to search for a movie and see its related movies` },
-  { title: 'AbuadBlog', link: 'abuad-blog.vercel.app', description: `Allows Abuad students to post tyhe hottest gist in the school` }
+  { title: 'Quranly', link: 'https://quranly-phi.vercel.app', description: 'Helps user track their memorization of the holy Quran' },
+  { title: 'Boom', link: 'https://boom-kohl.vercel.app', description: 'Lets users record, and upload movie clips and get the movie name.' },
+  { title: 'JibolaReel', link: 'https://jibola-reel.vercel.app', description: `Lets users to search for a movie and see its related movies` },
+  { title: 'AbuadBlog', link: 'https://abuad-blog.vercel.app', description: `Allows Abuad students to post tyhe hottest gist in the school` }
 ];
   return (
     <section className="p-6 sm:p-8">
