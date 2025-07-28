@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import {
   FaEnvelope, FaGithub, FaHtml5, FaCss3Alt, FaJsSquare,
-  FaReact, FaNodeJs, FaDatabase, FaExternalLinkAlt
+  FaReact, FaNodeJs, FaExternalLinkAlt
 } from 'react-icons/fa';
 import {
-  SiTailwindcss, SiMongodb, SiPostgresql, SiExpress
+  SiTailwindcss, SiExpress
 } from 'react-icons/si';
 
 const SlideInSection = ({ children, direction = 'up' }) => {
@@ -87,7 +87,9 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-cyan-400 mb-4">About Me</h2>
             <p className="text-gray-300 text-lg">
-              I’m a Nigerian-based developer focused on creating smooth, high-performing user interfaces. With a growing knowledge of backend technologies, I'm working toward becoming a full-stack engineer.
+             I’m a developer passionate about crafting interactive, high‑impact web experiences that feel seamless and memorable. I focus on clean, efficient code, smooth animations, and building products that balance beauty with performance.
+
+Right now, I’m working on Boom — a movie segment app that lets users record or upload short clips and identify the movie. The front‑end is live, while I’m actively developing the back‑end to handle real‑time processing and smarter search. Projects like Boom keep me pushing boundaries, blending design with functionality to create solutions people will love to use
             </p>
           </div>
         </SlideInSection>
