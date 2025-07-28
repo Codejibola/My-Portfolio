@@ -126,48 +126,41 @@ export default function Home() {
               <div className="flex flex-col items-center">
                 <SiExpress className="text-5xl text-gray-400" />
                 <span className="mt-2 text-gray-300">Express</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <SiMongodb className="text-5xl text-green-400" />
-                <span className="mt-2 text-gray-300">MongoDB</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <SiPostgresql className="text-5xl text-blue-400" />
-                <span className="mt-2 text-gray-300">PostgreSQL</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaDatabase className="text-5xl text-gray-400" />
-                <span className="mt-2 text-gray-300">SQL</span>
-              </div>
+              </div> 
             </div>
           </div>
         </SlideInSection>
       </section>
-
       {/* PROJECTS */}
-      <section id="projects" className="py-20 px-6 bg-white text-black">
+       <section id="projects" className="py-20 px-6 bg-black text-white">
         <SlideInSection direction="up">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-teal-700 mb-10">My Projects</h2>
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {projects.map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="p-6 border border-teal-100 rounded-lg shadow-md hover:shadow-xl transition-shadow bg-white"
-              >
-                <h3 className="text-xl font-semibold text-teal-700 mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded">
-                  View Demo <FaExternalLinkAlt className="ml-2" />
-                </a>
-              </motion.div>
-            ))}
-          </div>
-        </SlideInSection>
-      </section>
+         <h2 className="text-4xl font-bold text-cyan-400 text-center mb-10">My Projects</h2>
+         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+         {projects.map((project, index) => (
+           <motion.div
+             key={index}
+             initial={{ opacity: 0, y: 20 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             viewport={{ once: true }}
+             transition={{ duration: 0.5, delay: index * 0.2 }}
+             className="p-6 rounded-xl border border-cyan-800 bg-gradient-to-br from-zinc-900 to-black 
+                     shadow-lg hover:shadow-cyan-500/30 hover:scale-[1.02] transform transition-all duration-300"
+            >
+          <h3 className="text-xl font-semibold text-cyan-300 mb-2">{project.title}</h3>
+          <p className="text-gray-400 mb-4">{project.description}</p>
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-sm text-black bg-cyan-400 hover:bg-cyan-300 px-4 py-2 rounded transition"
+          >
+            View Demo <FaExternalLinkAlt className="ml-2" />
+          </a>
+           </motion.div>
+          ))}
+       </div>
+      </SlideInSection>
+     </section>
 
       {/* CONTACT */}
       <section id="contact" className="py-20 px-6 text-center">
