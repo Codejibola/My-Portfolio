@@ -55,7 +55,7 @@ export default function Home() {
         <SlideInSection direction="up">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
-              <h1 className="text-5xl font-extrabold text-teal-400 mb-6">Hi, I'm Bello Habeebullah</h1>
+              <h1 className="text-5xl font-extrabold text-teal-400 mb-6">Hi, I am Bello Habeebullah</h1>
               <p className="text-xl text-gray-400 mb-4">Frontend Developer | React Enthusiast | Aspiring Backend Engineer</p>
               <p className="text-gray-500 mb-4">I build beautiful, fast interfaces with React & TailwindCSS. Currently mastering Node.js, Express, and databases.</p>
               <div className="my-6 space-y-2">
