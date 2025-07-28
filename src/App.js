@@ -1,36 +1,61 @@
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import { Link } from 'react-scroll';
 
 export default function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-gradient-to-br from-white to-cyan-50 text-gray-800 font-sans">
-        <nav className="bg-white border-b shadow sticky top-0 z-50 p-4 flex justify-center space-x-10 text-sm sm:text-base">
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) =>
-              isActive ? 'text-teal-600 border-b-2 border-teal-600 pb-1 font-semibold' : 'hover:text-teal-600 pb-1'
-            }
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/projects"
-            className={({ isActive }) =>
-              isActive ? 'text-teal-600 border-b-2 border-teal-600 pb-1 font-semibold' : 'hover:text-teal-600 pb-1'
-            }
-          >
-            Projects
-          </NavLink>
-        </nav>
+    <div className="min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white font-sans">
+      
+      {/* NAVBAR */}
+      <nav className="bg-black/70 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50 p-4 flex justify-center space-x-10 text-sm sm:text-base">
+        <Link
+          to="hero"
+          smooth={true}
+          duration={500}
+          offset={-80}
+          className="cursor-pointer hover:text-cyan-400 transition-colors"
+        >
+          Home
+        </Link>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          offset={-80}
+          className="cursor-pointer hover:text-cyan-400 transition-colors"
+        >
+          About
+        </Link>
+        <Link
+          to="techstack"
+          smooth={true}
+          duration={500}
+          offset={-80}
+          className="cursor-pointer hover:text-cyan-400 transition-colors"
+        >
+          Tech Stack
+        </Link>
+        <Link
+          to="projects"
+          smooth={true}
+          duration={500}
+          offset={-80}
+          className="cursor-pointer hover:text-cyan-400 transition-colors"
+        >
+          Projects
+        </Link>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          offset={-80}
+          className="cursor-pointer hover:text-cyan-400 transition-colors"
+        >
+          Contact
+        </Link>
+      </nav>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </div>
-    </Router>
+      {/* MAIN CONTENT */}
+      <Home />
+    </div>
   );
 }
