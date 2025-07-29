@@ -6,53 +6,14 @@ export default function App() {
     <div className="min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white font-sans">
       
       {/* NAVBAR */}
-      <nav className="bg-black/70 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50 p-4 flex justify-center space-x-10 text-sm sm:text-base">
-        <Link
-          to="hero"
-          smooth={true}
-          duration={500}
-          offset={-80}
-          className="cursor-pointer hover:text-cyan-400 transition-colors"
-        >
-          Home
-        </Link>
-        <Link
-          to="about"
-          smooth={true}
-          duration={500}
-          offset={-80}
-          className="cursor-pointer hover:text-cyan-400 transition-colors"
-        >
-          About
-        </Link>
-        <Link
-          to="techstack"
-          smooth={true}
-          duration={500}
-          offset={-80}
-          className="cursor-pointer hover:text-cyan-400 transition-colors"
-        >
-          Tech Stack
-        </Link>
-        <Link
-          to="projects"
-          smooth={true}
-          duration={500}
-          offset={-80}
-          className="cursor-pointer hover:text-cyan-400 transition-colors"
-        >
-          Projects
-        </Link>
-        <Link
-          to="contact"
-          smooth={true}
-          duration={500}
-          offset={-80}
-          className="cursor-pointer hover:text-cyan-400 transition-colors"
-        >
-          Contact
-        </Link>
-      </nav>
+    <nav className="hidden sm:flex bg-black/70 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50 p-4 justify-center space-x-10 text-sm sm:text-base">
+      <Link to="hero" smooth duration={500} offset={-80} className="cursor-pointer hover:text-cyan-400">Home</Link>
+      <Link to="about" smooth duration={500} offset={-80} className="cursor-pointer hover:text-cyan-400">About</Link>
+      <Link to="techstack" smooth duration={500} offset={-80} className="cursor-pointer hover:text-cyan-400">Tech Stack</Link>
+      <Link to="projects" smooth duration={500} offset={-80} className="cursor-pointer hover:text-cyan-400">Projects</Link>
+      <Link to="contact" smooth duration={500} offset={-80} className="cursor-pointer hover:text-cyan-400">Contact</Link>
+   </nav>
+
 
       {/* MAIN CONTENT */}
       <Home />
