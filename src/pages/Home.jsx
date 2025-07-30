@@ -81,19 +81,110 @@ export default function Home() {
         </SlideInSection>
       </section>
 
-      {/* ABOUT */}
-      <section id="about" className="py-20 px-6 bg-zinc-900">
-        <SlideInSection direction="left">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-cyan-400 mb-4">About Me</h2>
-            <p className="text-gray-300 text-lg">
-             I’m a developer passionate about crafting interactive, high‑impact web experiences that feel seamless and memorable. I focus on clean, efficient code, smooth animations, and building products that balance beauty with performance.
+      {/* ABOUT SECTION */}
+<section id="about" className="py-16 sm:py-20 px-4 sm:px-6 bg-gradient-to-b from-black via-zinc-900 to-black">
+  <SlideInSection direction="left">
+    <div className="max-w-3xl mx-auto text-center">
+      <h2 className="text-4xl font-bold text-cyan-400 mb-6">About Me</h2>
+      <p className="text-gray-300 text-base sm:text-lg leading-relaxed sm:leading-loose px-2 sm:px-4">
+        I’m a developer passionate about crafting interactive, high‑impact web experiences that feel seamless and memorable. 
+        I focus on clean, efficient code, smooth animations, and building products that balance beauty with performance.
+      </p>
+      <p className="text-gray-300 text-base sm:text-lg leading-relaxed sm:leading-loose mt-4 px-2 sm:px-4">
+        Right now, I’m working on <span className="text-cyan-400 font-medium">Boom</span> — a movie segment app that lets users 
+        record or upload short clips and identify the movie. The front‑end is live, while I’m actively developing the back‑end to 
+        handle real‑time processing and smarter search.
+      </p>
+    </div>
+  </SlideInSection>
+</section>
 
-Right now, I’m working on Boom — a movie segment app that lets users record or upload short clips and identify the movie. The front‑end is live, while I’m actively developing the back‑end to handle real‑time processing and smarter search. Projects like Boom keep me pushing boundaries, blending design with functionality to create solutions people will love to use
+{/* MY JOURNEY SECTION */}
+<section id="journey" className="py-16 sm:py-20 px-4 sm:px-6 bg-black relative">
+  <SlideInSection direction="right">
+    <div className="max-w-6xl mx-auto relative">
+      <h2 className="text-4xl font-bold text-cyan-400 text-center mb-16">My Journey</h2>
+
+      {/* Timeline Line */}
+      <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-cyan-500/30 rounded-full 
+                      shadow-[0_0_15px_rgba(6,182,212,0.5)]"></div>
+
+      <div className="space-y-20 relative">
+        
+        {/* Glowing Dot - Frontend */}
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0.7 }}
+          whileInView={{ scale: 1.2, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="hidden md:block absolute left-1/2 top-[70px] w-4 h-4 rounded-full bg-cyan-400 
+                     shadow-[0_0_10px_rgba(6,182,212,0.8)] animate-pulse -translate-x-1/2 z-20"
+        />
+
+        {/* Frontend Journey - Left */}
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="md:w-1/2 md:pr-10 md:text-right relative z-10"
+        >
+          <div className="bg-gradient-to-br from-zinc-900 to-black p-6 rounded-xl border border-cyan-800 
+                          shadow-lg hover:shadow-cyan-500/30 transition transform hover:scale-[1.02]">
+            <h3 className="text-2xl font-semibold text-cyan-300 mb-2">Frontend Development</h3>
+            <p className="text-gray-400 leading-relaxed">
+              I started with HTML, CSS, and JavaScript before advancing to React and TailwindCSS.  
+              I’ve built responsive UIs, integrated animations, and focused on delivering smooth, user‑friendly designs.
             </p>
+            <div className="flex flex-wrap justify-end md:justify-start gap-4 text-2xl text-cyan-400 mt-4">
+              <FaHtml5 title="HTML5" />
+              <FaCss3Alt title="CSS3" />
+              <FaJsSquare title="JavaScript" />
+              <FaReact title="React" />
+              <SiTailwindcss title="Tailwind CSS" />
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Glowing Dot - Backend */}
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0.7 }}
+          whileInView={{ scale: 1.2, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="hidden md:block absolute left-1/2 top-[370px] w-4 h-4 rounded-full bg-cyan-400 
+                     shadow-[0_0_10px_rgba(6,182,212,0.8)] animate-pulse -translate-x-1/2 z-20"
+        />
+
+        {/* Backend Journey - Right */}
+              <motion.div
+                initial={{ opacity: 0, x: 80 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}
+                className="md:w-1/2 md:ml-auto md:pl-10 relative z-10"
+              >
+                <div className="bg-gradient-to-br from-zinc-900 to-black p-6 rounded-xl border border-cyan-800 
+                          shadow-lg hover:shadow-cyan-500/30 transition transform hover:scale-[1.02]">
+                  <h3 className="text-2xl font-semibold text-cyan-300 mb-2">Backend Development</h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    I’m deepening my backend knowledge with Node.js, Express, and databases like MongoDB and PostgreSQL.  
+                    I’m working on API design, authentication, and server logic to create complete, scalable applications.
+                  </p>
+                  <div className="flex flex-wrap gap-4 text-2xl text-cyan-400 mt-4">
+                    <FaNodeJs title="Node.js" />
+                    <SiExpress title="Express" />
+                    <SiMongodb title="MongoDB" />
+                    <SiPostgresql title="PostgreSQL" />
+                    <FaDatabase title="SQL" />
+                  </div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </SlideInSection>
       </section>
+
 
       {/* TECH STACK */}
       <section id="techstack" className="py-20 px-6">
