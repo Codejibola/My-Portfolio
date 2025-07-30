@@ -174,9 +174,6 @@ export default function Home() {
                   <div className="flex flex-wrap gap-4 text-2xl text-cyan-400 mt-4">
                     <FaNodeJs title="Node.js" />
                     <SiExpress title="Express" />
-                    <SiMongodb title="MongoDB" />
-                    <SiPostgresql title="PostgreSQL" />
-                    <FaDatabase title="SQL" />
                   </div>
                 </div>
               </motion.div>
