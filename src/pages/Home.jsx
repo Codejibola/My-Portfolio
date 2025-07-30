@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import {
   FaEnvelope, FaGithub, FaHtml5, FaCss3Alt, FaJsSquare,
-  FaReact, FaNodeJs, FaExternalLinkAlt
+  FaReact, FaNodeJs, FaExternalLinkAlt,FaDatabase
 } from 'react-icons/fa';
 import {
-  SiTailwindcss, SiExpress
+  SiTailwindcss, SiExpress,SiPostgresql, SiMongodb
 } from 'react-icons/si';
 
 const SlideInSection = ({ children, direction = 'up' }) => {
@@ -174,6 +174,9 @@ export default function Home() {
                   <div className="flex flex-wrap gap-4 text-2xl text-cyan-400 mt-4">
                     <FaNodeJs title="Node.js" />
                     <SiExpress title="Express" />
+                    <SiMongodb title="MongoDB" />
+                    <SiPostgresql title="PostgreSQL" />
+                    <FaDatabase title="SQL" />
                   </div>
                 </div>
               </motion.div>
