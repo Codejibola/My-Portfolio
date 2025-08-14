@@ -100,19 +100,20 @@ export default function Home() {
 </section>
 
 {/* MY JOURNEY SECTION */}
+{/* MY JOURNEY SECTION (updated theme + logos, background matched) */}
 <SlideInSection direction="up">
-  <section className="py-12 px-4 sm:px-8 md:px-20 bg-gray-900 text-white">
+  <section className="py-12 px-4 sm:px-8 md:px-20 bg-[#0a0a0a] text-white">
     <div className="max-w-6xl mx-auto">
       {/* Heading */}
       <div className="mb-10">
-        <h2 className="text-3xl sm:text-4xl font-bold text-teal-400 mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-4">
           My Journey
         </h2>
         <p className="text-gray-300 leading-relaxed max-w-3xl">
           My journey into web development has been a continuous story of
           curiosity and growth. From exploring small personal projects to
           taking on bigger challenges, each step has shaped my skills and
-          mindset. Today, I’m working on <span className="text-teal-400">Boom</span> — a movie segment app
+          mindset. Today, I’m working on <span className="text-cyan-400">Boom</span> — a movie segment app
           that allows users to record and upload clips which will be matched
           with movie titles. The backend is still in development, but the
           vision is set.
@@ -123,53 +124,72 @@ export default function Home() {
       <div className="space-y-8 md:space-y-0 md:grid md:grid-cols-2 md:gap-10 md:items-start">
         {/* Early Days */}
         <SlideInSection direction="left">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-teal-500/20 hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-semibold text-teal-400 mb-2">
+          <div className="bg-black p-6 rounded-lg shadow-lg border border-cyan-500/20 hover:shadow-cyan-500/30 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-semibold text-cyan-300 mb-2">
               Early Days
             </h3>
             <p className="text-gray-300 leading-relaxed">
               I started with basic HTML & CSS, fascinated by how lines of code
               could transform into something visible and interactive.
             </p>
+            <div className="flex flex-wrap gap-4 text-2xl text-cyan-400 mt-4">
+              <FaHtml5 title="HTML5" />
+              <FaCss3Alt title="CSS3" />
+            </div>
           </div>
         </SlideInSection>
 
         {/* Growing Skills */}
         <SlideInSection direction="right">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-teal-500/20 hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-semibold text-teal-400 mb-2">
+          <div className="bg-black p-6 rounded-lg shadow-lg border border-cyan-500/20 hover:shadow-cyan-500/30 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-semibold text-cyan-300 mb-2">
               Growing Skills
             </h3>
             <p className="text-gray-300 leading-relaxed">
               Over time, I expanded my skills to JavaScript, React, and backend
               development, learning how to connect design with functionality.
             </p>
+            <div className="flex flex-wrap gap-4 text-2xl text-cyan-400 mt-4">
+              <FaJsSquare title="JavaScript" />
+              <FaReact title="React" />
+              <SiTailwindcss title="Tailwind CSS" />
+            </div>
           </div>
         </SlideInSection>
 
         {/* Present Focus */}
         <SlideInSection direction="left">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-teal-500/20 hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-semibold text-teal-400 mb-2">
+          <div className="bg-black p-6 rounded-lg shadow-lg border border-cyan-500/20 hover:shadow-cyan-500/30 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-semibold text-cyan-300 mb-2">
               Present Focus
             </h3>
             <p className="text-gray-300 leading-relaxed">
               I’m building applications like Boom — aiming to make movie segment
               recording and recognition seamless for users everywhere.
             </p>
+            <div className="flex flex-wrap gap-4 text-2xl text-cyan-400 mt-4">
+              <FaReact title="React" />
+              <FaNodeJs title="Node.js" />
+              <SiExpress title="Express" />
+            </div>
           </div>
         </SlideInSection>
 
         {/* Looking Ahead */}
         <SlideInSection direction="right">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-teal-500/20 hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-semibold text-teal-400 mb-2">
+          <div className="bg-black p-6 rounded-lg shadow-lg border border-cyan-500/20 hover:shadow-cyan-500/30 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-semibold text-cyan-300 mb-2">
               Looking Ahead
             </h3>
             <p className="text-gray-300 leading-relaxed">
               My journey is far from over. I’m constantly learning, exploring
               new technologies, and building tools that solve real problems.
             </p>
+            <div className="flex flex-wrap gap-4 text-2xl text-cyan-400 mt-4">
+              <SiMongodb title="MongoDB" />
+              <SiPostgresql title="PostgreSQL" />
+              <FaDatabase title="SQL / Databases" />
+            </div>
           </div>
         </SlideInSection>
       </div>
