@@ -53,7 +53,8 @@ export default function Home() {
     { title: 'Hamatech', link: 'https://hamatech-aucn.vercel.app', description: 'A Full-stack digital device sales and repairs responsive website' },
     { title: 'Quantora', link: 'https://quantora-mu.vercel.app', description: 'A Full-stack web app that lets small buisiness owners keep record of their inventory without spending big.' },
     { title: 'JibolaReel', link: 'https://jibola-reel.vercel.app', description: `A Frontend only web app that lets users search for a movie and see related movies` },
-    { title: 'AbuadBlog', link: 'https://abuad-blog.vercel.app', description: `A Frontend only web app that allows Abuad students to post the hottest gist in the school` }
+    { title: 'AbuadBlog', link: 'https://abuad-blog.vercel.app', description: `A Frontend only web app that allows Abuad students to post the hottest gist in the school` },
+    { title: 'RAHMAH KNITS', link: 'https://rahmah-knits-ngqa.vercel.app', description: `A Frontend only web app that allows Abuad students to post the hottest gist in the school` }
   ];
 
   const navLinks = [
