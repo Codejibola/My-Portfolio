@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import bello from '../assets/BELLO.jpg';
+import bello from '../assets/BELLO.jpeg';
 import quantora from '../assets/image1.png';
 import hifz from '../assets/hifzhub.png';
 import rahamhKnits from '../assets/image2.png';
@@ -82,7 +82,7 @@ export default function Home() {
 },
 {
     title: 'HifzHub',
-    link: 'quranly-six.vercel.app',
+    link: 'https://quranly-jcdh.vercel.app/',
     image: hifz, 
     description: 'Quran memorization app with recitation, translation, daily ayahs, and bookmarking features.',
     contributions: [
