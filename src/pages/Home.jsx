@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import bello from '../assets/BELLO.jpg';
 import quantora from '../assets/image1.png';
+import hifz from '../assets/hifzhub.png';
 import rahamhKnits from '../assets/image2.png';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -78,7 +79,20 @@ export default function Home() {
     'Integrated authentication and authorization for users and owner'
   ],
   tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'TailwindCSS']
-}
+},
+{
+    title: 'HifzHub',
+    link: 'quranly-six.vercel.app',
+    image: hifz, 
+    description: 'Quran memorization app with recitation, translation, daily ayahs, and bookmarking features.',
+    contributions: [
+      'Integrated Quran Cloud API for Arabic verses and translations',
+      'Implemented multiple reciters selection with audio playback',
+      'Built daily ayah feature and bookmarking system using React hooks and localStorage',
+      'Designed responsive and modern UI with TailwindCSS'
+    ],
+    tech: ['React', 'TailwindCSS', 'JavaScript', 'Quran Cloud API']
+  }
 
   ];
 
